@@ -23,6 +23,27 @@ console.log(furnichureResult);
 
 
 
+   //----- brickCalculator----
+
+   function brickCalculator(bricks){
+    if(bricks >= 38000)
+    {
+        return(1000 * 15);
+    }
+    else if( bricks <= 16000)
+    {
+        return((1000 * 12) + 15000);
+    }
+    else (bricks == 37000)
+    {
+        return((1000 * 10) + 15000 + 12000);
+    }
+}
+var result = brickCalculator(37000);
+console.log(result);
+
+
+
 // ----tinyFrient -----
 
 function tinyFriend(array){
@@ -36,16 +57,5 @@ function tinyFriend(array){
     }
     var result = tinyFriend(['moni','sarika','onamika','mahejabin','mo','moyna','sonalyborno']);
     console.log(result); 
-
-
-
-
-    
-     
-   
-
-
-
-
 
 
